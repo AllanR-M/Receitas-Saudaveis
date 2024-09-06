@@ -28,4 +28,4 @@ Sabor Saudável é uma aplicação web intuitiva e completa, projetada para auxi
 
 1. **Clone o repositório:**
    ```bash
-   git clone (https://receitas-saudaveis-theta.vercel.app/)
+  https://receitas-saudaveis-theta.vercel.app
