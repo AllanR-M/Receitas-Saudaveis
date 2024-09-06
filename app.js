@@ -2,7 +2,7 @@ function pesquisar() {
     // Obtém a seção HTML onde os resultados da pesquisa serão exibidos
     let section = document.getElementById("resultados-pesquisa");
   
-    let campoPesquisa = document.getElementById("campo-pesquisa").value; 
+    let campoPesquisa = document.getElementById("campo-pesquisa").value;
 
     if (!campoPesquisa) {
         section.innerHTML = "<P>Nada foi encontrado</p>"
@@ -24,7 +24,8 @@ function pesquisar() {
         descrição = dado.descrição.toLocaleLowerCase()
         tags = dado.tags.toLocaleLowerCase()
         // se titilo includes campoPesquisa
-        if (titulo.includes(campoPesquisa) || descrição.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
+        if (dado.titulo.includes(campoPesquisa) || dado.descrição.includes(campoPesquisa) || 
+            dado.tags.includes(campoPesquisa)) {
             //// Constrói o HTML para cada item do resultado da pesquisa,
             resultados += `
             <div class="item-resultado">
